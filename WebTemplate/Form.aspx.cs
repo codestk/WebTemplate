@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace WebTemplate
 {
-    public partial class Login1 : System.Web.UI.Page
+    public partial class Form : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

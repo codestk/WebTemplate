@@ -115,11 +115,6 @@
                 </div>
             </div>
         </footer>
-
-        <!--  Scripts-->
-        <script src="Module/jquery-1.12.0.min.js"></script>
-        <script src="Module/Materialize/js/materialize.js"></script>
-        <script src="Module/Materialize/js/init.js"></script>
     </form>
 </body>
 </html>
