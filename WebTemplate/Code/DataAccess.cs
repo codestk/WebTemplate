@@ -1,6 +1,6 @@
 ﻿using CoreDb;
 
-namespace ExchangeService.Code
+namespace WebTemplate.Code
 {
     public class DataAccess
     {
@@ -25,20 +25,20 @@ namespace ExchangeService.Code
         /// <param name="sortAscending"></param>
         /// <param name="sortExpression"></param>
         /// <returns></returns>
-        public string SetSort(bool sortAscending, string sortExpression)
-        {
-            var sort = "";
-            if (sortExpression == null)
-            {
-                sort += "";
-            }
-            else
-            {
-                sort += string.Format(" order by {0}", sortExpression);
-                sort += (sortAscending ? "" : " desc");
-            }
+        //public string SetSort(bool sortAscending, string sortExpression)
+        //{
+        //    var sort = "";
+        //    if (sortExpression == null)
+        //    {
+        //        sort += "";
+        //    }
+        //    else
+        //    {
+        //        sort += string.Format(" order by {0}", sortExpression);
+        //        sort += (sortAscending ? "" : " desc");
+        //    }
 
-            return sort;
-        }
+        //    return sort;
+        //}
     }
 }

@@ -1,7 +1,7 @@
 ﻿using System.Configuration;
 using System.Globalization;
 
-namespace ExchangeService.Code
+namespace WebTemplate.Code
 {
     public class Config
     {

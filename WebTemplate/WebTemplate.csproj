@@ -91,7 +91,10 @@
     <Content Include="Module\Materialize\font\roboto\Roboto-Thin.ttf" />
     <Content Include="Module\Materialize\font\roboto\Roboto-Thin.woff" />
     <Content Include="Module\Materialize\font\roboto\Roboto-Thin.woff2" />
+    <Content Include="Repeater.aspx" />
     <Content Include="Site1.Master" />
+    <Content Include="WebForm.aspx" />
+    <Content Include="WebFormTest.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -120,8 +123,11 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Code\Configcs.cs" />
-    <Content Include="App_Code\DataAccess.cs" />
+    <Compile Include="Code\Business\AmpBangkok.cs" />
+    <Compile Include="Code\Business\AmpBangkokDb.cs" />
+    <Compile Include="Code\Business\BaseProperties.cs" />
+    <Compile Include="Code\Configcs.cs" />
+    <Compile Include="Code\DataAccess.cs" />
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -154,6 +160,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repeater.aspx.cs">
+      <DependentUpon>Repeater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Repeater.aspx.designer.cs">
+      <DependentUpon>Repeater.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -168,9 +181,22 @@
     <Compile Include="Table.aspx.designer.cs">
       <DependentUpon>Table.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WebForm.aspx.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm.aspx.designer.cs">
+      <DependentUpon>WebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebFormTest.aspx.cs">
+      <DependentUpon>WebFormTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebFormTest.aspx.designer.cs">
+      <DependentUpon>WebFormTest.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Code\Business\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
